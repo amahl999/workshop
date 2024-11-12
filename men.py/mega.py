@@ -1,1 +1,1 @@
-print("blue lock")
+from transformers import pipeline
