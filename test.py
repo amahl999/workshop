@@ -1,12 +1,8 @@
-def amahl_farouk() :
-    card = sum("deck")
-    return card
+count = 0
+while count < 8:
+    print(count)
+    count += 1
 
 
-answer = input("Do you smell? Yes or No?").capitalize()
-
-if answer == "no":
-    print("No")
-
-else:
-    print("Yes")
+for fruit in ["apple", "lemon", "banana", "kiwi"]:
+    print(fruit)
