@@ -8,7 +8,7 @@ def calculation_expenses(expenses):
 
 exp = [34.5, 67.6, 4598.34, 86.3]
 
-command = input("Which commans would you like to run fool? Options: expenses, ask_name ")
+command = input("Which command would you like to run fool? Options: expenses, ask_name ")
 
 if command == "expenses":
     print (calculation_expenses(exp))
