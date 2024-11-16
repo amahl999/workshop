@@ -1,7 +1,7 @@
-count = 0
-while count < 8:
-    print(count)
-    count += 1
+#count = 0
+#while count < 8:
+    #print(count)
+    #count += 1
 
 def rekenmachine(machine):
     sum_total = sum(machine)
@@ -13,18 +13,37 @@ print(rekenmachine(exp))
 
 
 
-def calculate_savings(savings):
-    saving_total = sum(savings)
-    return saving_total
+def calculate_savings(income, expenses):
+    savings = income - expenses
+    return f"Total savings: ${savings:.2f}"
 
-exp = []
+def simple_interest(principal, rate, time):
+    interest = principal * (rate / 100) * time
+    return f"Simple interest: ${interest:.2f}"
 
+def compound_interest(principal, rate, times_compound, years):
+    amount = principal * (rate / 100 / times_compound) ** (times_compound * years)
+    interest = amount - principal
+    return f"Compound interest: ${interest:.2f}"
 
+command = input("Which command would you like to run fool? Options: expenses, ask_name ")
 
-#for fruit in ["apple", "lemon", "banana", "kiwi"]:
-    #print(fruit)
+#if command == "ask_name":
+    #name = ask_name()
+    #print(f"Hello, {name}!")
 
-answer = input("What's your name dumbass?" ).capitalize()
+if  command == "compound_interest":
+    principal = input("What is the principal? ")
+    rate = input("What is the rate? ")
+    times_compound = ("How many times is the interest compounded per year? ")
+    years = ("For how many years? ")
+    print(compound_interest(principal, rate, times_compound, years))
 
+elif command == "simple_interest":
+    principal = input("")
+    rate = input("")
+    time = input("")
+    print(simple_interest(principal, rate, time))
 
-print(answer)
+else:
+    print("invalid command")
