@@ -1,5 +1,6 @@
 import random 
 
+cards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Ace", "King", "Queen", "Jack", "Joker"]
 
 Hearts = chr(9829)
 Diamonds = chr(9830)
@@ -19,12 +20,9 @@ def player_1():
 
 player_1()
 
-#for i in range (0, 6):
-
 
 def players():
-    ABI = [1, 2, 3, 4, 5, 6, 7, 8, 9, "King", "Queen", "Jack", "Joker"]
-    players_cards = print(random.choices(ABI, k = 7))
+    players_cards = print(random.choices(cards, k = 7))
     return players_cards
 
 players()
