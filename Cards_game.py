@@ -1,6 +1,7 @@
 import random 
 
-cards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Ace", "King", "Queen", "Jack", "Joker"]
+option1 = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "K", "Q", "J"]
+option2 = [chr(9829), chr(9830), chr(9824), chr(9827)]
 
 Hearts = chr(9829)
 Diamonds = chr(9830)
@@ -9,7 +10,7 @@ Clubs = chr(9827)
 
 Backside = "backside"
 
-a = '''Welkom bij patrick's pesten spelletje.'''
+a = '''Welkom bij Patrick's pesten spelletje.'''
 print(a)
 
 #Give the players 7 cards from the deck each
@@ -22,23 +23,19 @@ player_1()
 
 
 def players():
-    players_cards = print(random.choices(cards, k = 7))
+    players_cards = print(random.choices(option1, k = 7))
+    players_cards = print(random.choices(option2, k = 7))
     return players_cards
 
-players()
 
 #shuffle and divide
 def suit():
-        constants = [chr(9829), chr(9830), chr(9824), chr(9827)]
-        constants =print(random.choice(constants))
+        suit =print(random.choice(option2))
+        suit =print(random.choice(option1))
+        return suit
         
 
-def cards():
-        my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, "King", "Queen", "Jack", "Joker"]
-        my_list =print(random.choice(my_list))
-        return my_list
-        
+players()
 suit()
-cards()
 
 bet = input("You first. Which card? ") 
