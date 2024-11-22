@@ -19,8 +19,6 @@ def player_1():
     intro = print("Player One:")
     return intro
 
-player_1()
-
 
 def players():
     players_cards = print(random.choices(option1, k = 7))
@@ -30,12 +28,16 @@ def players():
 
 #shuffle and divide
 def suit():
-        suit =print(random.choice(option2))
         suit =print(random.choice(option1))
+        suit =print(random.choice(option2))
         return suit
         
 
+player_1()
 players()
+
+shuffle = input("Press Enter to shuffle ") 
+
 suit()
 
 bet = input("You first. Which card? ") 
