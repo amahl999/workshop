@@ -41,3 +41,8 @@ shuffle = input("Press Enter to shuffle ")
 suit()
 
 bet = input("You first. Which card? ") 
+
+if shuffle == bet:
+     print("Player 2 is next")
+else:
+     print("Take 1 card. Player 2 is next ")
