@@ -15,12 +15,12 @@ print(a)
 
 #Give the players 7 cards from the deck each
 
-def player_1():
+def player_one():
     intro = print("Player One:")
     return intro
 
 
-def players():
+def playerOne():
     players_cards = print(random.choices(option1, k = 7))
     players_cards = print(random.choices(option2, k = 7))
     return players_cards
@@ -33,8 +33,8 @@ def suit():
         return suit
         
 
-player_1()
-players()
+player_one()
+playerOne()
 
 shuffle = input("Press Enter to shuffle ") 
 
@@ -42,7 +42,20 @@ suit()
 
 bet = input("You first. Which card? ") 
 
-if shuffle == bet:
+if  option1 == bet:
      print("Player 2 is next")
 else:
      print("Take 1 card. Player 2 is next ")
+
+def player_two():
+    intro = print("Player Two:")
+    return intro
+
+
+def playerTwo():
+    players_cards = print(random.choices(option1, k = 7))
+    players_cards = print(random.choices(option2, k = 7))
+    return players_cards
+
+player_two()
+playerTwo()
