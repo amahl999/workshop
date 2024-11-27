@@ -1,15 +1,8 @@
 import random
 
-low = 1
-high = 100
-option1 = ("rock", "paper", "scissor")
-option2 = ("apew", "beta","sharp")
-cards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Ace", "King", "Queen", "Jack", "Joker"]
 
-option = random.choice(option1)
-
-
-
-#number = random.randint(low, high)
-
-print(option)
+a = ['Spears', "Adele", "NDubz", "Nicole", "Cristina"]
+b = [1,2,3,4,5]
+z = zip(a, b)
+# => [('Spears', 1), ('Adele', 2), ('NDubz', 3), ('Nicole', 4), ('Cristina', 5)]
+random.shuffle(z)
