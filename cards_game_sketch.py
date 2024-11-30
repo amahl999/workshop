@@ -1,8 +1,9 @@
-import random
+class Cards:
+    def __init__(self, hearts, spades):
+        self.hearts = hearts
+        self.spades = spades
 
+Card = Cards("King", 8)
 
-a = ['Spears', "Adele", "NDubz", "Nicole", "Cristina"]
-b = [1,2,3,4,5]
-z = zip(a, b)
-# => [('Spears', 1), ('Adele', 2), ('NDubz', 3), ('Nicole', 4), ('Cristina', 5)]
-random.shuffle(z)
+print(Card.hearts)
+print(Card.spades)

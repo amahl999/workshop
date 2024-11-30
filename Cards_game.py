@@ -3,9 +3,6 @@ import random
 option1 = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "K", "Q", "J"]
 option2 = [chr(9829), chr(9830), chr(9824), chr(9827)]
 
-combine = list(zip(option1, option2)) #zip or set methods check
-random.shuffle(combine)
-
 
 Hearts = chr(9829)
 Diamonds = chr(9830)
@@ -39,7 +36,7 @@ def suit():
 
 
 player_one()
-option1[:], option2[:] = zip(*combine)   #print(tuple(combine))
+#print(tuple(combine))
 playerOne()
 
 
