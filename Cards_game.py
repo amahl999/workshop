@@ -1,7 +1,7 @@
 import random 
 
 option1 = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "K", "Q", "J"]
-option2 = [chr(9829), chr(9830), chr(9824), chr(9827)]
+option2 = ["H", "D", "S", "C"]
 
 
 Hearts = chr(9829)
@@ -28,17 +28,15 @@ def playerOne():
 
 
 #shuffle and divide
+
 def suit():
-        suit =print(random.choice(option1))
-        suit =print(random.choice(option2))
-        return suit
+    suit =print(random.choice(option1))
+    suit =print(random.choice(option2))
+    return suit
         
-
-
-player_one()
 #print(tuple(combine))
+player_one()
 playerOne()
-
 
 
 shuffle = input("Press Enter to shuffle ") 
