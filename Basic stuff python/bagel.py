@@ -20,7 +20,7 @@ def main():
           Bagels        No digit is correct.
           
           For example, if the secret number was 248 and your guess was 843,
-          the clues would be Fermi Karim""".format(NUM_DIGITS))
+          the clues would be Pico Karim""".format(NUM_DIGITS))
     
     while True:     #Main game Loop.
         # This stores the secret number the player needs to guess:
@@ -75,7 +75,7 @@ def getClues(guess, secretNum):
     for i in range(len(guess)):
         if guess[i] == secretNum[i]:
             # A correct digit is in the correct place.
-            clues.append("Fermi")
+            clues.append("Pico")
         elif guess[i] in secretNum:
             # A correct digit is in the incorrect place.
             clues.append("Karim")
