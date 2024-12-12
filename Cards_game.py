@@ -3,6 +3,7 @@ import random
 option1 = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "K", "Q", "J"]
 option2 = ["H", "D", "S", "C"]
 
+mylist = option1.copy()
 
 Hearts = chr(9829)
 Diamonds = chr(9830)
@@ -30,18 +31,25 @@ def playerOne():
 #shuffle and divide
 
 def suit():
-    suit =print(random.choice(option1))
-    suit =print(random.choice(option2))
+    suit =print(random.sample(option1, k = 1))
+    suit =print(random.sample(option2, k = 1))
     return suit
         
+
+
 #print(tuple(combine))
 player_one()
 playerOne()
 
-
-shuffle = input("Press Enter to shuffle ") 
-
+def shuffle():
+    shuffle = input("Press Enter to shuffle ")
+    return shuffle
+ 
+shuffle()
 suit()
+
+#mylist = option1.copy()
+#print(mylist)
 
 bet = input("You first. Which card? ") 
 
@@ -62,3 +70,5 @@ def playerTwo():
 
 player_two()
 playerTwo()
+
+
