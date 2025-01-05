@@ -16,16 +16,26 @@ def createDeck():
 
 def main():
     deck = createDeck()
-    players = int(input("How many players? >"))
+    players = int(input("\nHow many players? >"))
     for index in range(1, players + 1):
-        print(f"\nplayer {index}:")
+        print(f"\nPlayer {index}:")
         for _ in range(7):
+            print(deck.pop())
+
+def dealer():
+    deck = createDeck()
+    dealer = int(input("\nDealerscard: "))
+    for i in range(dealer):
+        print(f"\nDealer: ")
+        for _ in range(1):
             print(deck.pop())
 
 
 
-if __name__ == "__main__":
-    main()
+main()
+dealer()
+
+
 
 
 
